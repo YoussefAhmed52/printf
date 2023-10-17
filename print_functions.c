@@ -46,7 +46,7 @@ int print_int(va_list ap, params_t *params)
 	else
 	l = (int)va_arg(ap, int);
 
-	return (print_number(convert(1, 10, 0, params), params));
+	return (print_number(convert(l, 10, 0, params), params));
 }
 
 /**
@@ -66,8 +66,7 @@ int print_string(va_list ap, params_t *params)
 		case 1:
 			str = NULL_STRING;
 
-		j = pad = _strlen(str);
-
+	j = pad = _strlen(str);
 	if (params->precision < pad)
 		j = pad = params->precision;
 

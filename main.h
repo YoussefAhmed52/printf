@@ -97,7 +97,7 @@ int print_from_to(char *start, char *stop, char *except);
 
 
 /* print_numbers.c */
-int print_number(char *tr, params_t *params);
+int print_number(char *str, params_t *params);
 int print_number_right_shift(char *str, params_t *params);
 int print_numbers_left_shift(char *str, params_t *params);
 int _isdigit(int c);

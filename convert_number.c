@@ -89,9 +89,9 @@ int print_binary(va_list ap, params_t *params)
 
 int print_octal(va_list ap, params_t *params)
 {
+	int c = 0;
 	unsigned long l;
 	char *str;
-	int c = 0;
 
 
 	if (params->l_modifier)
